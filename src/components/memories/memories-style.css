@@ -1,0 +1,35 @@
+.naslov {
+    position: relative;
+  }
+  .naslov::after {
+    content: "";
+    background: url(../../images/misc/stamp2.png);
+    opacity: 0.25;
+    top: 0;
+    left: 425px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+    @media only screen and (max-width: 600px){
+      .naslov::after {
+          content: "";
+          width: 150px;
+          background: url(../../images/misc/stamp2.png);
+          opacity: 0.25;
+          top: 0;
+          left: 150px;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;
+          background-size: 110px;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+  }

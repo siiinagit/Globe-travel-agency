@@ -1,0 +1,36 @@
+.offerbox {
+    position: relative;
+}
+
+.offerbox::after{
+    content: '';
+    box-shadow: 0px -130px 96px -25px rgba(0,0,0,0.51) inset;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;  
+    transition: all .6s ease;
+}
+
+.offerbox:hover::after {
+    
+    box-shadow: none;
+    
+}
+
+@media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 100vw;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1120px) {
+    .swiper-container {
+      width: 1120px;
+    }
+  }

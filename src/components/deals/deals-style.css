@@ -1,0 +1,77 @@
+.typo {
+  position: relative;
+}
+.typo::after {
+  content: "";
+  background: url(../../images/misc/stamp.png);
+  opacity: 0.25;
+  top: 0;
+  left: 425px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(30deg);
+}
+
+@media only screen and (max-width: 600px){
+    .typo::after {
+        content: "";
+        width: 150px;
+        background: url(../../images/misc/stamp.png);
+        opacity: 0.25;
+        top: 0;
+        left: 150px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: 90px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(30deg);
+    }
+}
+
+.container { min-height: 100vh;  display: grid;
+  grid-template-columns: 1fr 0.6fr 1.2fr 1.2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1% 1%;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "area1 area1 area3 area4"
+    "area1 area1 area2 area2";
+}
+
+.area1 { grid-area: area1; background-image: url('.//../../images/backgrounds/mountain.jpg'); background-size: cover;  background-repeat: no-repeat;
+  background-position: center; border-radius: 6px;}
+
+.area2 { grid-area: area2; background-image: url('.//../../images/backgrounds/sanfrancisko.jpg');background-size: cover;  background-repeat: no-repeat;
+  background-position: center; border-radius: 6px;}
+
+.area3 { grid-area: area3; background-image: url('.//../../images/backgrounds/sunflower.jpg');background-size: cover;  background-repeat: no-repeat;
+  background-position: center; border-radius: 6px;}
+
+.area4 { grid-area: area4; background-image: url('.//../../images/backgrounds/norway.jpg');background-size: cover;  background-repeat: no-repeat;
+  background-position: center; border-radius: 6px;}
+
+@media (max-width: 600px){
+  .container{
+    height: 100vh;  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1% 1%;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      ;
+  }
+  
+}
+

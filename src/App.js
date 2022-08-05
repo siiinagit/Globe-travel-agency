@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/Header.js";
+import Main from "./components/main/Main.js";
+import SelectField from "./components/selectField/SelectField.js";
+import Deals from "./components/deals/Deals.js";
+import Tours from "./components/tours/Tours.js";
+import Populars from "./components/populars/Populars.js";
+import Coments from "./components/Coments/Coments.js";
+import VideoPresent from "./components/videoPresentation/VideoPresent.js";
+import Offers from "./components/offers/Offers.js";
+import Memories from "./components/memories/Memories.js";
+import Parallax from "./components/parallax/Parallax.js";
+import Footer from "./components/footer/Footer.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <SelectField />
+      <Deals />
+      <Tours />
+      <Populars />
+      <Coments />
+      <VideoPresent />
+      <Offers />
+      <Memories />
+      <Parallax />
+      <Footer />
+    </>
   );
 }
 

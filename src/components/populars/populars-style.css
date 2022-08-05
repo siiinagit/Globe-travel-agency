@@ -1,0 +1,62 @@
+.typo3 {
+    position: relative;
+  }
+  .typo3::after {
+    content: "";
+    background: url(../../images/misc/stamp3.png);
+    opacity: 0.45;
+    top: 0;
+    left: 450px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-20deg);
+    margin: 0;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 600px){
+    .typo3::after {
+        content: "";
+        width: 135px;
+        background: url(../../images/misc/stamp3.png);
+        opacity: 0.45;
+        top: 0;
+        left: 200px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.swiper-container{
+  width:'100vw';
+}
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .swiper-container {
+    width: 1120px;
+  }
+}
+.swiper-slide {
+display: flex;
+justify-content: center;
+align-items: center;
+}

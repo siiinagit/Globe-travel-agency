@@ -1,0 +1,39 @@
+.ul-lista {
+  list-style: none;
+}
+.li-lista::before {
+  content: "•";
+  color: #f5700a;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 16px;
+}
+.ul-lista .li-lista{
+    cursor: pointer;
+    color: gray;
+}
+.ul-lista .li-lista:hover {
+color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .li-lista::before  {
+        content: "•";
+        color: #f5700a;
+        display: none;
+        width: 1em;
+        margin-left: -1em;
+        font-size: 16px;
+    }
+}
+
+.links{
+  font-weight: bolder;
+  color: #cecedb;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: #f5700a
+}
